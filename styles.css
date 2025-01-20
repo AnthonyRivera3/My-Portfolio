@@ -18,14 +18,28 @@ body {
 }
 
 .nav-link {
-    margin-left: 10px;
-    color: #ffffff; 
-    background-color: #007bff; 
-    border-radius: 5px;
-    padding: 15px 30px;
+    display: inline-block; /* Ensures the link behaves like a block but flows inline */
+    padding: 15px 30px; /* As previously set */
     text-decoration: none;
-    font-size: 18px; 
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 18px;
 }
+
+.nav li {
+    margin-right: 10px; /* Space between items, adjust as needed */
+}
+
+
+.nav ul {
+    display: flex;        /* Aligns children (li) horizontally */
+    padding: 0;           /* Removes padding */
+    list-style-type: none;/* Removes bullet points */
+    align-items: center;  /* Center items vertically */
+    margin: 0;            /* Removes default margin */
+}
+
 
 .profile {
     display: flex;
@@ -51,8 +65,10 @@ h1 {
 }
 
 .nav {
-    position: absolute;
-    right: 10px; 
-    top: 10px; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1000;
 }
 
