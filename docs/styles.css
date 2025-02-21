@@ -55,19 +55,35 @@
 }
 
 .additional-info {
+    display: flex; align-items: flex-start;
     width: 40%; 
-    
+    max-width: 600px; 
     font-size: 18px; 
-     padding-top: 10px;
-     padding-left: 100px;
-     padding-right: 10px; 
-     padding-bottom: 20px;
-     margin-left: 400px;
-     margin-right:5px ;
-     margin-top: -70px;
+    padding-top: 10px;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-bottom: 20px;
+    margin-left: 350px; 
+    margin-right: 50px; 
+    margin-top: -70px;
     color: #ffffff; 
     background-color: rgba(104, 8, 134, 0.346);
+    word-wrap: break-word; 
+    text-align: left;
 }
+
+/* Mobile resizing */
+@media (max-width: 768px) {
+    .additional-info {
+        width: 90%; 
+        font-size: 16px; 
+        text-align: left; 
+        padding-left: 5%; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+}
+
 
                                                                                   /* first pills end */
 
@@ -215,7 +231,7 @@
 
 .nav-links a {
     text-decoration: none; 
-    font-size: 30px; 
+    font-size: 18px; 
     color: rgb(237, 233, 233);
     font-weight: bold;
     padding: 10px 20px; 
