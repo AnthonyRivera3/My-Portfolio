@@ -182,7 +182,35 @@ html {
    
 
 
-                                                /*contacts pill start*/
+                                                                               /*Resume start*/
+
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    overflow: hidden;
+}
+
+.resume-viewer {
+    width: 60%;
+    height: 100%;
+    border: none;
+}
+
+
+
+
+
+
+                                                                            /*Resume end*/
+
+                                             /*contacts pill start*/
 .contacts-pill {
     display: flex;
     flex-direction: row;
@@ -251,3 +279,12 @@ html {
 #contact h1{
     color: rgb(255, 255, 255);
 }
+
+#resume h1{
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
